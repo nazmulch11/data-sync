@@ -1,0 +1,149 @@
+
+/* Tabs */
+.data-sync-tabs {
+    margin-top: 20px;
+}
+
+.data-sync-tabs .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.data-sync-tabs .tab-content {
+    display: none;
+}
+
+.data-sync-tabs .tab-content.active {
+    display: block;
+}
+
+/* Data table */
+.data-sync-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.data-sync-actions {
+    display: flex;
+    align-items: center;
+}
+
+.data-sync-last-update {
+    margin-left: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+.data-sync-table {
+    margin-top: 15px;
+}
+
+.data-sync-table .column-id {
+    width: 10%;
+}
+
+.data-sync-table .column-title {
+    width: 25%;
+}
+
+.data-sync-table .column-description {
+    width: 45%;
+}
+
+.data-sync-table .column-details {
+    width: 20%;
+    text-align: center;
+}
+
+.data-sync-no-data {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* Modal */
+.data-sync-modal {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.data-sync-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.data-sync-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.data-sync-modal-close:hover,
+.data-sync-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#data-sync-modal-body {
+    margin-top: 20px;
+}
+
+#data-sync-modal-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#data-sync-modal-body table th,
+#data-sync-modal-body table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#data-sync-modal-body table th {
+    background-color: #f2f2f2;
+}
+
+/* Loading indicator */
+.data-sync-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.data-sync-loading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #2271b1;
+    animation: data-sync-spin 1s linear infinite;
+}
+
+@keyframes data-sync-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
