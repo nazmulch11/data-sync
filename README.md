@@ -1,7 +1,7 @@
 # Data Sync
 
 === Data Sync ===
-Contributors: nazmulhosen
+Contributors: nazmul111
 Tags: api, data, sync
 Requires at least: 5.0
 Tested up to: 6.4
